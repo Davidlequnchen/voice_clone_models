@@ -11,3 +11,7 @@ cosyvoice3_0.5b/flow.pt
 cosyvoice3_0.5b/speech_tokenizer_v3.onnx
 chatterbox/t3_cfg.safetensors
 chatterbox/s3gen.safetensors
+# OS and Python artifacts
+.DS_Store
+__pycache__/
+*.pyc
