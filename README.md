@@ -12,6 +12,8 @@ revisions of `antideepfake/config/voice_clone.yaml`; only the files the inferenc
 cd emotion_recognition/antideepfake/models
 git clone https://github.com/Davidlequnchen/voice_clone_models.git voice_clone   # this folder: models/voice_clone/
 cd voice_clone && python join_parts.py        # joins the parts and checks every SHA-256
+git sparse-checkout set --no-cone '/*' '!*.part[0-9][0-9][0-9]'   # optional: drop the parts from the folder
+                                              # (saves 10.7 GB; `git sparse-checkout disable` brings them back)
 cd ../.. && python scripts/voice_clone/download_models.py   # clones the CosyVoice code from GitHub; skips the models
 python scripts/voice_clone/generate.py
 ```
