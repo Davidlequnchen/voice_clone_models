@@ -1,0 +1,13 @@
+# Hugging Face download caches
+.cache/
+# A join in progress
+*.joining
+# The large files themselves: this repository holds their parts (<file>.part000, ...) and <file>.sha256
+cosyvoice2_0.5b/llm.pt
+cosyvoice2_0.5b/speech_tokenizer_v2.onnx
+cosyvoice2_0.5b/flow.pt
+cosyvoice3_0.5b/llm.pt
+cosyvoice3_0.5b/flow.pt
+cosyvoice3_0.5b/speech_tokenizer_v3.onnx
+chatterbox/t3_cfg.safetensors
+chatterbox/s3gen.safetensors
